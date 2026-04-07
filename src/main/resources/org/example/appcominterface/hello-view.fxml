@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <Pane BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="entrar" layoutX="342.0" layoutY="348.0" mnemonicParsing="false" text="Entrar" />
+                <Label layoutX="278.0" layoutY="61.0" prefHeight="75.0" prefWidth="161.0" text="Login" textFill="#248ef2">
+                    <font>
+                        <Font name="Times New Roman" size="64.0" />
+                    </font>
+                </Label>
+                <Label fx:id="saudacao" layoutX="311.0" layoutY="179.0" prefHeight="30.0" prefWidth="113.0" textFill="#2e79da">
+                    <font>
+                        <Font name="Cambria" size="24.0" />
+                    </font>
+                </Label>
+                <Hyperlink layoutX="369.0" layoutY="304.0" prefHeight="23.0" prefWidth="113.0" text="Esqueceu a Senha?" />
+                <CheckBox layoutX="259.0" layoutY="307.0" mnemonicParsing="false" text="CheckBox" textFill="#3b8ec3" />
+                <PasswordField layoutX="250.0" layoutY="270.0" prefHeight="25.0" prefWidth="235.0" promptText="   Senha">
+                    <padding>
+                        <Insets right="100.0" />
+                    </padding>
+                </PasswordField>
+                <TextField layoutX="250.0" layoutY="235.0" prefHeight="25.0" prefWidth="235.0" promptText="   Email">
+                    <padding>
+                        <Insets right="100.0" />
+                    </padding>
+                </TextField>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>
