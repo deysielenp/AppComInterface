@@ -1,12 +1,11 @@
 package org.example.appcominterface;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
-public class HelloController {
+import java.io.IOException;
+
+public class LoginController {
     @FXML
     TextField txtUsuario;
     @FXML
@@ -15,7 +14,13 @@ public class HelloController {
     Button btnLogin;
     @FXML
     Label saudacao;
+    @FXML
+    Hyperlink cadastro;
 
+    @FXML
+    protected void irParaTelaCadastro() throws IOException{
+        HelloApplication.trocadorDeTelas("TelaCadastro.fxml");
+    }
     @FXML
     protected void onButtonLoginClick(){
         LoginDAO usuario = new LoginDAO();

@@ -6,12 +6,12 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.appcominterface.HelloController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.appcominterface.LoginController">
    <opaqueInsets>
       <Insets />
    </opaqueInsets>
    <center>
-      <VBox alignment="CENTER" prefHeight="510.0" prefWidth="718.0" BorderPane.alignment="CENTER">
+      <VBox alignment="CENTER" prefHeight="510.0" prefWidth="773.0" BorderPane.alignment="CENTER">
          <children>
                 <Label prefHeight="75.0" prefWidth="172.0" text="Login">
                     <font>
@@ -28,12 +28,12 @@
                      <stops>
                         <Stop>
                            <color>
-                              <Color red="0.14741715788841248" green="0.44515514373779297" blue="0.7236841917037964" />
+                              <Color red="0.14901961386203766" green="0.4470588266849518" blue="0.7254902124404907" />
                            </color>
                         </Stop>
                         <Stop offset="1.0">
                            <color>
-                              <Color red="0.2774122953414917" green="0.7600694298744202" blue="0.8684210777282715" />
+                              <Color red="0.27843138575553894" green="0.7607843279838562" blue="0.8666666746139526" />
                            </color>
                         </Stop>
                      </stops>
@@ -72,12 +72,12 @@
             </Label>
                 <TextField fx:id="txtUsuario" prefHeight="25.0" prefWidth="326.0" promptText="   Email/Usuário">
                <VBox.margin>
-                  <Insets bottom="10.0" left="230.0" right="230.0" top="10.0" />
+                  <Insets bottom="10.0" left="250.0" right="250.0" top="10.0" />
                </VBox.margin>
                 </TextField>
                 <PasswordField fx:id="txtSenha" prefHeight="25.0" prefWidth="235.0" promptText="   Senha">
                <VBox.margin>
-                  <Insets bottom="10.0" left="230.0" right="230.0" />
+                  <Insets bottom="10.0" left="250.0" right="250.0" />
                </VBox.margin>
                 </PasswordField>
             <HBox prefHeight="26.0" prefWidth="293.0">
@@ -87,14 +87,14 @@
                         <Insets left="5.0" />
                      </HBox.margin>
                   </CheckBox>
-                      <Hyperlink prefHeight="23.0" prefWidth="111.0" text="Esqueceu a Senha?">
+                      <Hyperlink prefHeight="23.0" prefWidth="137.0" text="Esqueceu a Senha?">
                      <HBox.margin>
-                        <Insets left="10.0" />
+                        <Insets />
                      </HBox.margin>
                   </Hyperlink>
                </children>
                <VBox.margin>
-                  <Insets bottom="30.0" left="230.0" right="230.0" />
+                  <Insets bottom="30.0" left="250.0" right="250.0" top="10.0" />
                </VBox.margin>
             </HBox>
                 <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#onButtonLoginClick" text="Entrar">
@@ -105,4 +105,15 @@
          </children>
       </VBox>
    </center>
+   <top>
+      <HBox prefHeight="25.0" prefWidth="715.0" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink fx:id="cadastro" alignment="TOP_RIGHT" contentDisplay="RIGHT" nodeOrientation="RIGHT_TO_LEFT" onAction="#irParaTelaCadastro" text="Cadastrar-se" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Hyperlink>
+         </children>
+      </HBox>
+   </top>
 </BorderPane>
