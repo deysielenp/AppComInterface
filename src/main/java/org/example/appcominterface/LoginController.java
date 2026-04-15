@@ -21,6 +21,7 @@ public class LoginController {
     protected void irParaTelaCadastro() throws IOException{
         HelloApplication.trocadorDeTelas("TelaCadastro.fxml");
     }
+
     @FXML
     protected void onButtonLoginClick(){
         LoginDAO usuario = new LoginDAO();
