@@ -34,7 +34,7 @@ public class HelloApplication extends Application {
         );
 
         // Cria a cena com o conteúdo carregado
-        Scene scene = new Scene(loader.load());
+        Scene scene = new Scene(loader.load(), 800,600);
 
         // Define a cena no Stage principal
         primaryStage.setScene(scene);

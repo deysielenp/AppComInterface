@@ -1,11 +1,11 @@
 .btn-primario{
-    -fx-background-color:  #48b0d9;
+    -fx-background-color:  #2672b9;
     fx-text-fill: white;
     -fx-background-radius: 8px;
     -fx-font-weight: bold;
 }
 .btn-primario:hover {
-    -fx-background-color: #4338ca;
+    -fx-background-color: #2672b9;
 }
 .botao-gradiebt{
     -fx-background-color: linear-gradient(to bottom,#2672b9 ,#48b0d9);

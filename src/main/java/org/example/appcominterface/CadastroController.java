@@ -48,7 +48,7 @@ public class CadastroController {
         HelloApplication.trocadorDeTelas("hello-view.fxml");
     }
     @FXML
-    public void onCriarClick() {
+    public void onCriarClick() throws IOException {
 
         String usuario = txtNome.getText();
         String email = txtEmail.getText();
@@ -78,6 +78,15 @@ public class CadastroController {
             return;*/
             erroConfirmar.setText("Senhas não conferem");
         }
+        CadastroDAO cadastro = new CadastroDAO();
+        cadastro.criar(usuario, email, senha);
+        Alert alerta = new Alert(Alert.AlertType.WARNING);
+            alerta.setTitle("Usuário criado");
+            alerta.setHeaderText(null);
+            alerta.setContentText("Usuário criado com sucesso");
+            alerta.showAndWait();
+
+            HelloApplication.trocadorDeTelas("hello-view.fxml");
 
     }
 }
